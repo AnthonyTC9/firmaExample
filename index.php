@@ -12,10 +12,7 @@ ob_start();
             max-width: 360px;
             padding: 0;
             width: 500px;
-
         }
-
-
         table .phone {
             text-decoration: none;
         }
