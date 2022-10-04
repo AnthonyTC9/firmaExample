@@ -12,7 +12,9 @@ ob_start();
             max-width: 360px;
             padding: 0;
             width: 500px;
+
         }
+
 
         table .phone {
             text-decoration: none;
@@ -30,7 +32,7 @@ $data = json_decode(file_get_contents('data.json'));
 foreach($data->people as $id => $element) {
     ?>
     <hr>
-    <table style="width: 100vw">
+    <table >
         <tr>
             <th><button onclick="copyHTML('html<?= $id; ?>')">COPY</button></th>
             <th>Code</th>
@@ -42,7 +44,7 @@ foreach($data->people as $id => $element) {
                 ?>
                 <div id="html<?= $id; ?>">
                     <table>
-                        <tbody>
+                        <tbody >
                             <tr>
                                 <td style="padding:20px; background-image:url(pictures/fondo1.png); background-size: cover;">
                                     <table >
@@ -65,7 +67,7 @@ foreach($data->people as $id => $element) {
                                                         </td>
                                                     </tr>
                                                 </table>
-                                            </td>                                                                   
+                                            </td>                                                    
 
                                             </tr>
                                         </tbody>
